@@ -1,26 +1,43 @@
 # What is this?
-This used to be a fork of [**loopuleasa**](github.com/loopuleasa)'s
-[famous layout](https://github.com/loopuleasa/Dota2-TheCore-Config-Engine), until I decided that the design ideas went too far away from the origin and a separate
-repository is needed to keep things tidy.
+This used to be a fork of [**Loopuleasa**](github.com/loopuleasa)'s
+[famous layout](https://github.com/loopuleasa/Dota2-TheCore-Config-Engine), until I decided that my design ideas went too far away from the original version and a separate repository was needed to keep things tidy.
 
-## Long Description
-What I found after seriously using Loopuleasa's layout is that the functions it
-presents are indeed helpful, but the implementation is a bit unergonomic. I
-personally dislike the way how ability keys are positioned at `Q`, `W`, `E`, and
-so on. I think, there was a missed opportunity to utilize not one, but two custom
-modifier keys it has to offer. So in my version of the layout the first thing I
-addressed is where to put item and ability keys so that it will make sense.
+## Long Description <!--TODO: make this bearable to read -->
+What I found after continuously using Loopuleasa's layout is that the functions it
+presents are indeed helpful, but the key positions are wonky at times. In that layout,
+For example, the ability keys are at `Q`, `W`, `E`, and so on. I believe, there
+is a missed opportunity to make the binds more comfortable by positioning the most
+important ones on the home row. So in my version of the layout the item and ability
+key positions is the first thing I've addressed.
 
-<!-- TODO: reread & rewrite
-The general concept behind this layout is to move all the important functions to
-the home row of one's left hand, so that the right hand will have a jolly good time enjoying it's mouse, without having to swap positions for no good reason.  
-After some testing I came to a conclusion, that the most comfortable way to play
-Dota is to assign `Ability 1` to `A`, `Ability 2` to `S`, `Ability 3` to `D`,
-`Ability 4` to `W`, `Ability 5` to `E`, and lastly, `Ultimate` to `F`, because of
-that nice little pip, which all modern keyboards have.
-I additionaly support the idea of using space as a modifier key. Why? Because why
-bother yourself with pinky injury when your fat thumb is chilling on the keyboard
-mat? Time to put that lazy guy to good use! -->
+Secondly, smart-cast. Some people are highly against anything other than _canon_
+normal-cast, but I beg to differ. I base my reasoning on the idea that there should not be
+any limitation to player's comfort and if something is not user-friendly, the
+outdated component has to be replaced.
+
+Let's cut to the chase. Most will agree, that using __normal-cast__ is pretty
+painful on heroes like Earth Spirit or Meepo, as it requires ~40% more clicks to
+do the same action compared to quick-cast. There is one edge case, however, when
+quick-cast doesn't cut it: big AoE ultimates. Obviously, they are still possible
+to be executed with quick-cast on, but for those who are used to good-old AoE
+indicators will find quick-cast confusing, annoying, and damaging to one's in-game
+performance. Usually, people solve this by toggling individual keys from quick to
+normal cast.
+
+I am not that kind of person.
+
+What smart-cast does is __on key press__ it shows the __AoE/range indicator__ on spells
+that have one. __On key release__, it __executes the spell__ at the pointed location.  
+There are currently a couple of problems with it, though:
+1. Right-click does not cancel spell cast, you need to bind a special key to do it,
+otherwise the hero will cast the spell at the location of the cursor regardless of your
+consecutive actions.
+2. If not properly set-up, spells with no cast time will be cast twice (_messes up Invoker players_).
+
+These, however, are not unsolvable problems, and all of them will be fixed in my setup
+_very soon_ :tm:
+
+Oh, and btw, I :heart: `SPACE` as modifier key. You have to deal with it, or rebind :smile:
 
 ## Roadmap
 - Implement all desired functions and provide sensible documentation.

@@ -1,0 +1,19 @@
+// My personal favourite sounds in Dota 2. For a full list, take a look at:
+// etc/dota2sounds.txt
+
+sounds/ui/yoink.vsnd_c
+sounds/ui/spin_music_end.vsnd_c
+sounds/ui/treasure_03.vsnd_c
+sounds/ui/treasure_02.vsnd_c
+sounds/ui/treasure_01.vsnd_c
+sounds/ui/badge_levelup.vsnd_c
+sounds/ui/treasure_remove_hero.vsnd_c
+sounds/ui/ui_upgrade_ability_01.vsnd_c
+sounds/ui/ui_teammate_bought_bling.vsnd_c
+sounds/ui/ui_level_up_01.vsnd_c
+sounds/ui/levelup_male.vsnd_c
+sounds/ui/levelup_female.vsnd_c
+sounds/ui/magic_immune.vsnd_c
+
+alias "+sound_aah" playsound sounds/ui/levelup_male.vsnd_c
+alias "-sound_aah" playsound sounds/ui/levelup_female.vsnd_c
