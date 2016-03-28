@@ -10,7 +10,7 @@ Good question. The whole project started as a variant of loopuleasa's Dota 2 con
 
 - Smart-cast is on by default. Smart-cast on release is implemented for skillshots/AoE ults where it is nice to see a range indicator.
 - Abilites are bound to `A`, `S`, `D`, `W`, `E`, and ultimate is bound to `F`.
-- Item hotkeys are `W`, `E`, `R`, `S`, `D`, `F`, note that some of them are overlapping. That brings to the next point:
+- Item hotkeys are `W`, `E`, `R`, `S`, `D`, `F`. Note that some of them are overlapping. That brings to the next point:
 - Key chords and modes. A chord is a combination of keys pressed simultaneously and a mode is essentially the keybinds. One is defined by the other and everything is defined by the __Fundamental Mode__, which autoexec file executes at startup.
 
 
