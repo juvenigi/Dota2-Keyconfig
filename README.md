@@ -4,31 +4,30 @@ This used to be a fork of [**Loopuleasa**](github.com/loopuleasa)'s
 
 <!--TODO: make this bearable to read -->
 ## Long Description
-What I found after continuously using Loopuleasa's layout is that the functions it
-presents are indeed helpful, but the key positions are wonky at times. In that layout,
-For example, the ability keys are at `Q`, `W`, `E`, and so on. I believe, there
-is a missed opportunity to make the binds more comfortable by positioning the most
-important ones on the home row. So in my version of the layout the item and ability
-key positions is the first thing I've addressed.
+What I found after continuously using Loopuleasa's layout is that the features it
+presents are indeed helpful, but the key positions felt too mundane at times.  
+For example, the ability keys are at `Q`, `W`, `E`, and so on -- in my eyes, it's a missed
+opportunity to deviate from classic and to make interesting discoveries. That is
+basically what my layout is trying to accomplish: provide loop's functionality with
+different key locations / bindings.
 
-Secondly, smart-cast. Some people are highly against anything other than _canon_
-normal-cast, but I beg to differ. I base my reasoning on the idea that there should not be
-any limitation to player's comfort and if something is not user-friendly, the
-outdated component has to be replaced.
+Another thing I always wanted to properly implement is smart-cast.
 
-Let's cut to the chase. Most will agree, that using __normal-cast__ is pretty
-painful on heroes like Earth Spirit or Meepo, as it requires ~40% more clicks to
-do the same action compared to quick-cast. There is one edge case, however, when
-quick-cast doesn't cut it: big AoE ultimates. Obviously, they are still possible
-to be executed with quick-cast on, but for those who are used to good-old AoE
-indicators will find quick-cast confusing, annoying, and damaging to one's in-game
-performance. Usually, people solve this by toggling individual keys from quick to
-normal cast.
+This might seem as a dangerous area which crosses the line between convenience
+and advantageous scripting. Because of how vague the limits are, I generally assume
+that experimentation should not be punished.
+
+Honestly, quick-cast and smart-cast are absolutely similar, and for some people,
+not worth the trouble going through config files to try things out. The only time
+when quick-cast doesn't cut it is when you need to cast big AoE ultimates.
+Obviously, they are still possible to be executed with quick-cast on, but for those
+who are used to good-old AoE indicators will find quick-cast pretty annoying.  
+Usually, people solve this by toggling between normal and quick-cast
 
 I am not that kind of person.
 
-What smart-cast does is __on key press__ it shows the __AoE/range indicator__ on spells
-that have one. __On key release__, it __executes the spell__ at the pointed location.  
+Smart-cast shows the __AoE/range indicator__ on spells that have one __on key press__.
+__On key release__, it __executes the spell__ at the pointed location.  
 There are currently a couple of problems with it, though:
 1. Right-click does not cancel spell cast, you need to bind a special key to do it,
 otherwise the hero will cast the spell at the location of the cursor regardless of your
@@ -43,6 +42,6 @@ Oh, and btw, I :heart: `SPACE` as modifier key. You have to deal with it, or reb
 ## Roadmap
 - Implement all desired functions and provide sensible documentation.
 - Support alternative layouts (_Colemak, Dvorak, Workman_).
-- Properly introduse smart-cast.
-  - Fix smart-cast for some spells (Shadow Fiend's Raze, Ember Sprit's Chains), possibly by introdusing hero scripts.
+- Properly introduce smart-cast.
+  - Fix smart-cast for some spells (Shadow Fiend's Raze, Ember Spirit's Chains), possibly by introducing hero scripts.
 - Clean up, and release a first, non-beta version.
