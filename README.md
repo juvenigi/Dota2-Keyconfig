@@ -1,47 +1,25 @@
-# What is this?
-This used to be a fork of [**Loopuleasa**](github.com/loopuleasa)'s
-[famous layout](https://github.com/loopuleasa/Dota2-TheCore-Config-Engine), until I decided that my design ideas went too far away from the original version and a separate repository was needed to keep things tidy.
+# Dota 2 optimizations and key configuration
 
-<!--TODO: make this bearable to read -->
-## Long Description
-What I found after continuously using Loopuleasa's layout is that the features it
-presents are indeed helpful, but the key positions felt too mundane at times.  
-For example, the ability keys are at `Q`, `W`, `E`, and so on -- in my eyes, it's a missed
-opportunity to deviate from classic and to make interesting discoveries. That is
-basically what my layout is trying to accomplish: provide loop's functionality with
-different key locations / bindings.
+This is now a twice rebooted project aimed at greatly amplifying effectiveness of Dota 2 players. It features a set of quality-of-life improvements for those who seek better keyboard shortcuts and convenient macros.
 
-Another thing I always wanted to properly implement is smart-cast.
+## Which features are planned and what's already implemented?
 
-This might seem as a dangerous area which crosses the line between convenience
-and advantageous scripting. Because of how vague the limits are, I generally assume
-that experimentation should not be punished.
+Good question. The whole project started as a variant of loopuleasa's Dota 2 configuration. Having used said layout I found that some things were simply uncomfortably placed for my liking. This is the goal of my _.cfg_ files: arguably better binds with minor but welcome additions.
 
-Honestly, quick-cast and smart-cast are absolutely similar, and for some people,
-not worth the trouble going through config files to try things out. The only time
-when quick-cast doesn't cut it is when you need to cast big AoE ultimates.
-Obviously, they are still possible to be executed with quick-cast on, but for those
-who are used to good-old AoE indicators will find quick-cast pretty annoying.  
-Usually, people solve this by toggling between normal and quick-cast
+## Distinct features of this config.
 
-I am not that kind of person.
+- Smart-cast is on by default. Smart-cast on release is implemented for skillshots/AoE ults where it is nice to see a range indicator.
+- Abilites are bound to `A`, `S`, `D`, `W`, `E`, and ultimate is bound to `F`.
+- Item hotkeys are `W`, `E`, `R`, `S`, `D`, `F`, note that some of them are overlapping. That brings to the next point:
+- Key chords and modes. A chord is a combination of keys pressed simultaneously and a mode is essentially the keybinds. One is defined by the other and everything is defined by the __Fundamental Mode__, which autoexec file executes at startup.
 
-Smart-cast shows the __AoE/range indicator__ on spells that have one __on key press__.
-__On key release__, it __executes the spell__ at the pointed location.  
-There are currently a couple of problems with it, though:
-1. Right-click does not cancel spell cast, you need to bind a special key to do it,
-otherwise the hero will cast the spell at the location of the cursor regardless of your
-consecutive actions.
-2. If not properly set-up, spells with no cast time will be cast twice (_messes up Invoker players_).
 
-These, however, are not unsolvable problems, and all of them will be fixed in my setup
-_very soon_ :tm:
-
-Oh, and btw, I :heart: `SPACE` as modifier key. You have to deal with it, or rebind :smile:
-
-## Roadmap
-- Implement all desired functions and provide sensible documentation.
-- Support alternative layouts (_Colemak, Dvorak, Workman_).
-- Properly introduce smart-cast.
-  - Fix smart-cast for some spells (Shadow Fiend's Raze, Ember Spirit's Chains), possibly by introducing hero scripts.
-- Clean up, and release a first, non-beta version.
+### Mode list:
+- Fundamental
+- Hero mode
+  - no modifier pressed
+  - alt pressed
+  - space pressed
+  - space + alt pressed (spalt)
+- Courier mode
+- Special hero mode

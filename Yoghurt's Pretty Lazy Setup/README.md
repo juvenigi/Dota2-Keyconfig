@@ -1,14 +1,9 @@
-# Table of contents
+# What you're looking at?
 
-1. __autoexec-files__ is a folder where all all autoexec-related files are stored.
-  1. __keymap__ has all `bind` commands are located.
+A set of folders that don't have to necessarily be placed inside the Dota 2 config folder!
 
-  2. __modes__ is an intermediate place between __keymap__ and __binds__, allows for fancy multi-layout setups. This folder also contains __init__ configs.
+If you know how to create symlinks, just get one for __autoexec.cfg__ and __autoexec-files__ and you'll be good to go! As it turns out, Source engine can perfectly handle them, so why not to utilize them?
 
-  3. __functions__ contains all the good stuff (courer scripts, smart-cast, etc...)
+autoexec.cfg file is pretty empty, because the magic part happens in the autoexec-files files folder, where other `.cfg` files are at.
 
-  4. __opt__ is a place for optional configuration, which can be disabled without causing harm. It also stores playsound aliases.
-
-  5. __etc__ is a ~~junkyard~~ place to store fancy images describing the keyboard layout.
-
-6. __tmp__ is a temporary file dump. Stuff will be removed from as it will get implemented.
+BTW, check out the etc folder, it contains good stuff, like sound file names which you can easily include in your own configuration file!
