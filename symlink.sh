@@ -9,5 +9,5 @@ echo $SOURCE_DIR
 # TODO: create a prmpt "is your Dota installation in $HOME/.steam/steamapps/common?"
 cd $HOME/.steam/steam/steamapps/common/dota\ 2\ beta/game/dota/cfg
 # Creates symbolic links in working directory
-ln -s -v -T "$SOURCE_DIR/autoexec.cfg" "autoexec.cfg"
-ln -s -v -T "$SOURCE_DIR/autoexec-files" "autoexec-files"
+ln -s -T "$SOURCE_DIR/autoexec.cfg" "autoexec.cfg"
+ln -s -T "$SOURCE_DIR/autoexec-files" "autoexec-files"

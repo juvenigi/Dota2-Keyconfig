@@ -1,0 +1,54 @@
+// list of functions used in this entire config.
+
+alias "nil" "" // Do nothing command
+alias "null" ""// Same as nil
+alias "re_exec" "exec autoexec.cfg"
+
+// Modifier keys
+
+//alias +mod0 "togglemod0"
+//alias togglemod0 "tgmod0_0"
+//alias tgmod0_0 "alias togglemod0 tgmod0_1; do_something"
+//alias tgmod0_1 "alias togglemod0 tgmod0_0; do_something"
+
+// Item aliases
+alias "i0" "dota_item_execute 0"
+alias "i1" "dota_item_execute 1"
+alias "i2" "dota_item_execute 2"
+alias "i3" "dota_item_execute 3"
+alias "i4" "dota_item_execute 4"
+alias "i5" "dota_item_execute 5"
+
+// Aliases for Tread-switching (Item: Power Treads)
+// Use Power Treads once, twice, or none.
+alias "pt_0" "null"
+alias "pt_1" "i1"
+alias "pt_2" "i1; i1"
+// Not to be used directly, prerequisites for pt_str, pt_agi, pt_int
+alias "pt_tostr" "pt_0"
+alias "pt_toint" "pt_1"
+alias "pt_toagi" "pt_2"
+// To be used in scripts for treadswitching; pt_s = return to last state
+alias "pt_str" "pt_tostr; alias "pt_tostr" "pt_0; alias "pt_s" "pt_str""; alias "pt_toint" "pt_1; alias "pt_s" "pt_str""; alias "pt_toagi" "pt_2; alias "pt_s" "pt_str"""
+alias "pt_int" "pt_toint; alias "pt_tostr" "pt_2; alias "pt_s" "pt_int""; alias "pt_toint" "pt_0; alias "pt_s" "pt_int""; alias "pt_toagi" "pt_1; alias "pt_s" "pt_int"""
+alias "pt_agi" "pt_toagi; alias "pt_tostr" "pt_1; alias "pt_s" "pt_agi""; alias "pt_toint" "pt_2; alias "pt_s" "pt_agi""; alias "pt_toagi" "pt_0; alias "pt_s" "pt_ago"""
+
+alias "a0" "dota_ability_quickcast 0"
+alias "pt_a0" "say_student "debug"; pt_int; a0; pt_s"
+
+// Temporary debug
+bind "a" "pt_str"
+bind "s" "pt_int"
+bind "d" "pt_agi"
+
+bind "f" "pt_s"
+
+// Experimental shit
+
+//alias +kA "meepocount" //TODO: bind to a key properly
+alias meepocount "mpocnt_0"
+alias mpocnt_0 "alias meepocount mpocnt_1; say_student One Meepo!"
+alias mpocnt_1 "alias meepocount mpocnt_2; say_student Two Meepos!"
+alias mpocnt_2 "alias meepocount mpocnt_3; say_student Tree Meepos!"
+alias mpocnt_3 "alias meepocount mpocnt_4; say_student Four Meepos!"
+alias mpocnt_4 "alias meepocount mpocnt_0; say_student Five Meepos!"

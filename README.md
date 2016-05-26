@@ -1,25 +1,19 @@
+
+<!-- TODO: insert a picture displaying the layout -->
+# THANKS VOLVO
+https://www.reddit.com/r/DotA2/comments/4kzld1/a_plea_to_valve_please_dont_kill_the_honest/
+
+This is all you have to know. Well, let's do the same thing, but with shell scripts and __xbindkeys__!
+
+The rest is left for cerimonial purposes, haha
+
 # Dota 2 optimizations and key configuration
 
-This is now a twice rebooted project aimed at greatly amplifying effectiveness of Dota 2 players. It features a set of quality-of-life improvements for those who seek better keyboard shortcuts and convenient macros.
+The aim of this project is to provide convenient keybinds to often irritating and repetative actions, ease up micromanagement,and to rearrange ability keys ergonomically (although not for everyone). However, Valve broke autoexec scripts, so I won't work with .cfg files anymore!
 
-## Which features are planned and what's already implemented?
+## Planned features
 
-Good question. The whole project started as a variant of loopuleasa's Dota 2 configuration. Having used said layout I found that some things were simply uncomfortably placed for my liking. This is the goal of my _.cfg_ files: arguably better binds with minor but welcome additions.
-
-## Distinct features of this config.
-
-- Smart-cast is on by default. Smart-cast on release is implemented for skillshots/AoE ults where it is nice to see a range indicator.
+- Smart cast on key down disabled, range indicator enabled for easier executions of spells like Lina's Light Strike Array, Enigma's Black Hole,  etc..
 - Abilites are bound to `A`, `S`, `D`, `W`, `E`, and ultimate is bound to `F`.
-- Item hotkeys are `W`, `E`, `R`, `S`, `D`, `F`. Note that some of them are overlapping. That brings to the next point:
-- Key chords and modes. A chord is a combination of keys pressed simultaneously and a mode is essentially the keybinds. One is defined by the other and everything is defined by the __Fundamental Mode__, which autoexec file executes at startup.
+- Key chords. Rule of thumb: pressing 2 buttons is easier (and arguably more reliable) than double-tapping a singular one.
 
-
-### Mode list:
-- Fundamental
-- Hero mode
-  - no modifier pressed
-  - alt pressed
-  - space pressed
-  - space + alt pressed (spalt)
-- Courier mode
-- Special hero mode
